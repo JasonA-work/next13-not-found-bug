@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function NotFound() {
   return (
     <>
@@ -9,6 +11,8 @@ export default function NotFound() {
         behavior shows both in the browser UI and when I check the network tab
         (all the resources are reloaded / refetched)
       </h1>
+      <br />
+      <Link href="/">Go back home</Link>
     </>
   )
 }
