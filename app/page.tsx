@@ -13,9 +13,10 @@ export default function Home() {
         </Link>
       </p>
       <p>
-        When I hit the link that should go to a 404 page, the UI doesn't change
-        at all (even though the URL does change). The UI only changes if I
-        refresh the page.
+        In normal routes, the application behaves as expected. But in the 404
+        routes, the 404 page refreshes itself every 3-4 seconds or so. This
+        behavior shows both in the browser UI and when I check the network tab
+        (all the resources are reloaded / refetched)
       </p>
     </>
   )
