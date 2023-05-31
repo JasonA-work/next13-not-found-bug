@@ -1,5 +1,6 @@
-Basically, when I navigate to a non-existent URL, the 'not-found.js' UI is not shown (even though the URL has already updated in the browser). To make it show, I need to refresh the page manually.
+In normal routes, the application behaves as expected. But in the 404 for routes, the 404 page refreshes itself every 3-4 seconds or so.
 
-Also, once I got to the 'not-found.js' UI, when I hit the browsers back button, the URL updates to the previous URL but the UI stays the same, at 'not-found.js'. I need to refresh the page to make the UI match with the URL.
+This behavior shows both in the browser UI and when I check the network tab
+(all the resources are reloaded / refetched) But in the 404 for routes, the 404 page refreshes itself every 3-4 seconds or so. This behavior shows both in the browser UI and when I check the network tab (all the resources are reloaded / refetched).{" "}
 
-I believe this is not the intended behavior of the 'not-found.js' right? The way I understand it is that it should act pretty much like a 404.html file.
+_This seems to only happen on the development server (npm run dev). In PROD, with Vercel, things seem to be fine._
